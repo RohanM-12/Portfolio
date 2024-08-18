@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -8,9 +9,7 @@ const Header = () => {
     <>
       <div className="flex items-center h-16 my-5 mx-10 border-2 bg-gray-900 rounded-3xl drop-shadow-2xl border-pink-600">
         <div className="text-center mx-5 text-xl w-52 text-white font-bold font-mono ">
-          <span className=" cursor-pointer object-contain hover:text-3xl mx-1 transition-all duration-300 ">
-            👋🏻
-          </span>
+          <span className=" cursor-pointer object-contain hover:text-3xl mx-1 transition-all duration-300 "></span>
           <span className="font-mono text-white  drop-shadow-sm ">
             {" <Rohan_M/>"}
           </span>
