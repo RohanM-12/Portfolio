@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -22,25 +21,37 @@ const Header = () => {
               className="object-contain hover:scale-150 transition-transform duration-300 hover:cursor-pointer "
             />
           </div>
-          <div className="mx-4 text-white drop-shadow-lg ">
+          <a
+            target="_blank"
+            href={"https://www.linkedin.com/in/rohan-m1212/"}
+            className="mx-4 text-white drop-shadow-lg "
+          >
             <IoLogoLinkedin
               size={32}
               className="object-contain hover:scale-150 transition-transform duration-300 hover:cursor-pointer "
             />
-          </div>
+          </a>
 
-          <div className="mx-4 text-white drop-shadow-lg  ">
+          <a
+            target="_blank"
+            href={"https://github.com/RohanM-12"}
+            className="mx-4 text-white drop-shadow-lg  "
+          >
             <FaGithub
               size={32}
               className="object-contain hover:scale-150 transition-transform duration-300 hover:cursor-pointer "
             />
-          </div>
-          <div className="mx-4 text-white drop-shadow-lg ">
+          </a>
+          <a
+            target="_blank"
+            href={"https://x.com/Rohan_M1212"}
+            className="mx-4 text-white drop-shadow-lg "
+          >
             <FaXTwitter
               size={32}
               className="object-contain hover:scale-150 transition-transform duration-300 hover:cursor-pointer "
             />
-          </div>
+          </a>
         </div>
       </div>
     </>

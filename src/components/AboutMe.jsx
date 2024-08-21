@@ -17,7 +17,7 @@ const AboutMe = () => {
             src="/lift.png"
           />
         </span>
-        <span className="text-3xl text-white font-bold ">ABOUT ME</span>
+        <span className="text-2xl text-orange-500 font-bold ">ABOUT ME</span>
         <span>
           <Image
             draggable={false}
@@ -29,11 +29,11 @@ const AboutMe = () => {
           />
         </span>
       </div>
-      <div className="flex justify-center items-center font-bold text-2xl font-mono text-sky-400">
+      <div className="flex justify-center items-center font-bold text-2xl font-mono text-pink-600">
         <span className="mx-3 mb-3">
           <ImQuotesLeft size={20} className="text-pink-500" />
         </span>
-        <span>I LIFT 💪🏻 & I CODE 💻</span>
+        <span className="font-mono animate-pulse">I LIFT 💪🏻 & I CODE 💻</span>
         <span className="mx-3 mb-3">
           <ImQuotesRight size={20} className="text-pink-500" />
         </span>

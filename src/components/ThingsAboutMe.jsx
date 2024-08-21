@@ -81,6 +81,7 @@ const ThingsAboutMe = () => {
               >
                 "https://github.com/RohanM-12"
               </Link>
+              ,
             </div>
             <div>
               <span className="text-yellow-400">"linkedIn": </span>
@@ -89,6 +90,16 @@ const ThingsAboutMe = () => {
                 className="text-pink-400"
               >
                 "https://www.linkedin.com/in/rohan-m1212/"
+              </Link>
+              ,
+            </div>
+            <div>
+              <span className="text-yellow-400">"x.com(twitter)": </span>
+              <Link
+                href={"https://x.com/Rohan_M1212"}
+                className="text-pink-400"
+              >
+                "https://x.com/Rohan_M1212"
               </Link>
             </div>
           </div>
@@ -101,7 +112,7 @@ const ThingsAboutMe = () => {
 
       <div className="mt-5 text-xs text-gray-500 text-center font-mono">
         <span className="animate-pulse">
-          /** More cool stuff coming soon... */
+          /* More cool stuff coming soon... */
         </span>
       </div>
     </div>
