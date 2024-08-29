@@ -1,21 +1,23 @@
+"use client";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
 import { Image } from "antd";
 import { FaCopy } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa6";
 export default function Home() {
   return (
     <main>
-      <div className="p-20">
+      <div className="px-20 py-8">
         <div className="grid grid-cols-2">
           <div>
             <div className=" font-semibold text-3xl my-10">
               <span>
                 <Image src={"/wave.gif"} width={30} height={30} />
               </span>
-              <span className="text-white"> Hey there, i'm </span>
+              <span className="text-black"> Hey there, i'm </span>
               <span className="font-bold text-pink-700 ">Rohan Mali. </span>
             </div>
-            <div className="font-semibold text-xl my-2 text-white">
+            <div className="font-semibold text-xl my-2 text-black">
               <div className="text-orange-500">{"<div>"}</div>
               <div className="ml-10">
                 {" A Full-Stack Developer turning caffeine into code and "}
@@ -51,6 +53,9 @@ export default function Home() {
               src="/bg1.gif"
             />
           </div>
+        </div>
+        <div className="flex justify-center mt-5">
+          <FaChevronDown className="animate-bounce text-gray-50" size={40} />
         </div>
       </div>
       <div>

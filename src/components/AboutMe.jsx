@@ -33,13 +33,16 @@ const AboutMe = () => {
         <span className="mx-3 mb-3">
           <ImQuotesLeft size={20} className="text-pink-500" />
         </span>
-        <span className="font-mono animate-pulse">I LIFT 💪🏻 & I CODE 💻</span>
+        <span className="font-mono animate-pulse">I LIFT & I CODE</span>
         <span className="mx-3 mb-3">
           <ImQuotesRight size={20} className="text-pink-500" />
         </span>
       </div>
       <div>
         <ThingsAboutMe />
+      </div>
+      <div className="flex justify-center items-center my-5">
+        <div className="border-b-4 rounded-xl animate-pulse border-white w-32 "></div>
       </div>
     </section>
   );
