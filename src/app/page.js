@@ -1,6 +1,7 @@
 "use client";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
+import Work from "@/components/work";
 import { Image } from "antd";
 import { FaCopy } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa6";
@@ -63,6 +64,9 @@ export default function Home() {
       </div>
       <div>
         <Projects />
+      </div>
+      <div>
+        <Work />
       </div>
     </main>
   );
