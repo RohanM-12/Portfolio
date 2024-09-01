@@ -16,7 +16,7 @@ const Projects = () => {
         </span>
         Projects.<span className="text-orange-700">built()</span>
       </div>
-      <div className="grid grid-cols-3 p-5">
+      <div className="grid   grid-cols-1 sm:grid-cols-3  ">
         <ProjectCard
           title={"EcryptShare"}
           description={
