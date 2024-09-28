@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Image from "next/image";
-
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import Link from "next/link";
 const Projects = () => {
   return (
     <section>
@@ -37,6 +38,11 @@ const Projects = () => {
           imgSrc={"/Projects/QuickBuy.png"}
         />
       </div>
+      <Link href={"https://github.com/RohanM-12"}>
+        <div className="flex px-5 py-2 justify-center items-center font-semibold font-mono text-orange-500 text-xl drop-shadow-2xl">
+          checkout more projects <FaArrowAltCircleRight className="mx-2" />
+        </div>
+      </Link>
     </section>
   );
 };

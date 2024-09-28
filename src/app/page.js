@@ -46,7 +46,10 @@ export default function Home() {
                     npm install -g hello-rohan
                   </span>
                   <button className="ml-3">
-                    <FaCopy size={20} className="text-pink-500" />
+                    <FaCopy
+                      size={20}
+                      className="text-white hover:scale-125 transition-transform duration-300"
+                    />
                   </button>
                 </div>
               </div>

@@ -16,10 +16,13 @@ const Header = () => {
 
       {/* Social Media Icons */}
       <div className="flex items-center space-x-4 sm:space-x-6 text-white">
-        <PiReadCvLogoFill
-          size={28}
+        <a
+          target="_blank"
+          href={process.env.RESUME_LINK}
           className="hover:scale-125 hover:text-pink-600 transition-transform duration-300 cursor-pointer"
-        />
+        >
+          <PiReadCvLogoFill size={28} />
+        </a>
 
         <a
           target="_blank"
