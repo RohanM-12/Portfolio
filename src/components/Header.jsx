@@ -6,7 +6,7 @@ import { PiReadCvLogoFill } from "react-icons/pi";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between h-16 my-5 mx-auto max-w-5xl px-4 sm:px-10 border-2 bg-gray-900 rounded-3xl shadow-2xl border-pink-600 transition-all duration-300">
+    <div className="z-50 fixed top-0 backdrop-blur-3xl flex items-center justify-between h-16 my-5 mx-auto max-w-5xl px-4 sm:px-10 border-2 bg-gray-900/20 rounded-3xl shadow-2xl border-pink-600 transition-all duration-300">
       {/* Logo and Title */}
       <div className="text-center mx-3 text-lg sm:text-2xl w-40 sm:w-52 text-white font-bold font-mono flex items-center justify-center">
         <span className="font-mono text-white cursor-pointer hover:text-pink-600 transition-all duration-300">
@@ -19,15 +19,15 @@ const Header = () => {
         <a
           target="_blank"
           href={process.env.RESUME_LINK}
-          className="hover:scale-125 hover:text-pink-600 transition-transform duration-300 cursor-pointer"
+          className="hover:scale-150  backdrop-blur-3xl hover:text-pink-300 transition-transform duration-200 cursor-pointer"
         >
-          <PiReadCvLogoFill size={28} />
+          <PiReadCvLogoFill size={28}  />
         </a>
 
         <a
           target="_blank"
           href={"https://www.linkedin.com/in/rohan-m1212/"}
-          className="hover:scale-125 hover:text-pink-600 transition-transform duration-300 cursor-pointer"
+          className="hover:scale-150 hover:text-pink-300 transition-transform duration-200 cursor-pointer"
         >
           <IoLogoLinkedin size={28} />
         </a>
@@ -35,7 +35,7 @@ const Header = () => {
         <a
           target="_blank"
           href={"https://github.com/RohanM-12"}
-          className="hover:scale-125 hover:text-pink-600 transition-transform duration-300 cursor-pointer"
+          className="hover:scale-150 hover:text-pink-300 transition-transform duration-200 cursor-pointer"
         >
           <FaGithub size={28} />
         </a>
@@ -43,7 +43,7 @@ const Header = () => {
         <a
           target="_blank"
           href={"https://x.com/Rohan_M1212"}
-          className="hover:scale-125 hover:text-pink-600 transition-transform duration-300 cursor-pointer"
+          className="hover:scale-150 hover:text-pink-300 transition-transform duration-200 cursor-pointer"
         >
           <FaXTwitter size={28} />
         </a>

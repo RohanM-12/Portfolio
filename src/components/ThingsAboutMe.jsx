@@ -2,11 +2,14 @@ import React from "react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { BsFillTerminalFill } from "react-icons/bs";
 import Link from "next/link";
+import { HeroHighlight } from "./ui/hero-bg";
 
 const ThingsAboutMe = () => {
   return (
-    <div className="relative bg-gray-900 text-white w-full max-w-3xl mx-auto p-4 sm:p-6 my-10 shadow-2xl border-4 border-indigo-600 rounded-lg">
-      <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
+    <div className="relative bg-gray-900 text-white w-full max-w-3xl mx-auto p-3 sm:p-3 my-10 shadow-2xl border-4 border-indigo-500 rounded-lg">
+      <HeroHighlight className={"h-fit "}>
+    
+      <div className="flex flex-row sm:flex-row justify-between items-center mb-4">
         {/* Traffic Lights and File Name Section */}
         <div className="flex space-x-2 mb-4 sm:mb-0">
           <div className="bg-red-500 rounded-full w-4 h-4"></div>
@@ -123,6 +126,7 @@ const ThingsAboutMe = () => {
           /* More cool stuff coming soon... */
         </span>
       </div>
+      </HeroHighlight>
     </div>
   );
 };

@@ -1,7 +1,9 @@
 "use client";
 import AboutMe from "@/components/AboutMe";
 import End from "@/components/End";
+import Header from "@/components/Header";
 import Projects from "@/components/Projects";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 import Work from "@/components/Work"; // Corrected the import for consistency
 import { Image } from "antd";
 import { FaCopy } from "react-icons/fa6";
@@ -10,12 +12,14 @@ import { FaChevronDown } from "react-icons/fa6";
 export default function Home() {
   return (
     <main>
+      <AuroraBackground className={"rounded-xl m-0.5"}>
+      <Header />
       <div className="px-8 sm:px-20 py-8">
         {/* Intro Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
           {/* Text Section */}
           <div>
-            <div className="font-semibold text-3xl my-10 flex items-center">
+            <div className="font-semibold text-3xl my-10 flex items-center justify-center">
               <Image
                 src={"/wave.gif"}
                 width={30}
@@ -23,12 +27,14 @@ export default function Home() {
                 alt="Waving hand"
                 preview={false}
               />
-              <span className="ml-2 text-black">Hey there, I'm </span>
+              <div>
+              <span className="ml-2 text-white">Hey there, I'm </span>
               <span className="font-bold text-pink-700 ml-1">Rohan Mali.</span>
+              </div>
             </div>
 
             {/* Description */}
-            <div className="font-semibold text-xl my-2 text-black">
+            <div className="font-semibold text-xl my-2 text-white">
               <div className="text-orange-500">{"<div>"}</div>
               <div className="ml-10">
                 A Full-Stack Developer turning caffeine into code and
@@ -42,7 +48,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative px-5 py-2 bg-gray-900 ring-1 ring-gray-900/5 rounded-lg leading-none flex items-center">
-                  <span className="text-sm text-gray-100">
+                  <span className="text-sm text-gray-100 p-2">
                     npm install -g hello-rohan
                   </span>
                   <button className="ml-3">
@@ -73,6 +79,7 @@ export default function Home() {
           <FaChevronDown className="animate-bounce text-gray-500" size={40} />
         </div>
       </div>
+      </AuroraBackground>
 
       {/* Sections: About Me, Projects, Work, End */}
       <div className="mt-16">

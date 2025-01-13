@@ -7,7 +7,7 @@ const Work = () => {
     <div className="p-5">
       {/* Header Section */}
       <div className="flex justify-center items-center text-3xl font-mono font-bold mb-10">
-        <span className="font-mono text-black font-bold"> Work.</span>
+        <span className="font-mono text-white font-bold"> Work.</span>
         <span className="text-orange-700">init()</span>
       </div>
 
@@ -27,13 +27,13 @@ const Work = () => {
         {/* Text Content Section */}
         <div className="space-y-4">
           <div>
-            <span className="text-xl font-bold text-gray-800">• ETechnie</span>
+            <span className="text-xl font-bold text-gray-300">• ETechnie</span>
             <span className="text-orange-500">
               {" "}
               - Frontend Developer Intern
             </span>
           </div>
-          <div className="font-semibold text-gray-700 space-y-2">
+          <div className="font-semibold text-gray-300 space-y-2">
             <p>
               • Worked on a project for a tours and travel business, developing
               ERP software that managed buses, drivers, helpers, and daily
